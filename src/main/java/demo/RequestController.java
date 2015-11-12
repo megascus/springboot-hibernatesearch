@@ -6,15 +6,17 @@
 package demo;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  *
  * @author megascus
  */
-@Controller(value = "/")
+@Controller
 public class RequestController {
     
+    @RequestMapping("/")
     public String get() {
-        return "";
+        return "index";
     }
 }
